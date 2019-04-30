@@ -1,0 +1,33 @@
+.form-main {
+  height: 314px;
+  width: 1024px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.main-menu {
+  font-family: Consolas;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.input_title {
+  height: 26px;
+  width: 100%;
+  margin-bottom: 10px;
+  padding-left: 2px;
+}
+
+
+.input_search {
+  height: auto;
+  width: 120px;
+  margin-bottom: 10px;
+  padding-left: 2px;
+}
+
+.btn-normal {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
