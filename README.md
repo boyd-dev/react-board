@@ -61,6 +61,8 @@ npm run start:dev
 
 2) 프론트 애플리케이션에서 [Login wirh uPort]를 클릭합니다(QR코드가 표시될 때까지 약간 지연이 발생할 수 있습니다).
 
+<img src="https://github.com/boyd-dev/react-board/blob/master/qr-code_300.png"/>
+
 3) 모바일 uport 앱을 사용하여 QR 코드를 스캔합니다.  앱에서 QR 코드 스캔 버튼을 누르십시오.
 
 4) 잠시 후 다음과 같은 화면이 표시됩니다. [Login with Existing]을 누릅니다.
