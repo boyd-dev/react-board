@@ -12,7 +12,7 @@ create-react-app으로 생성된 프로젝트로 만들어졌습니다. 게시�
 redux, react-redux를 사용하여 애플리케이션 state를 관리합니다. 경우에 따라서는 해당 컴포넌트에서만 사용되는 state를 만들기도 합니다. 
 
 * redux-saga  
-백엔드의 REST-API와 통신하기 위해 미들웨어 [redux-saga](https://github.com/redux-saga/redux-saga)를 사용합니다. redux-saga는 애플리케이션이 "side-effect"를 일으킬 때 애플리케이션의 상태를 보다 쉽게 관리할 수 있도록 해주는 미들웨어입니다. 이 예제처럼 백엔드 서버의 REST-API를 호출하는 것이 대표적인 "side-effect"가 되겠습니다. redux-thunk와는 다르게 "declarative"하게 처리합니다. redux-thunk에서는 thunk라는 함수를 작성하여 action 생성 함수에 넣어주고 다시 dispatch하는 방식이지만 redux-saga는 saga라고 부르는 generator 함수를 작성하며 action은 변경되지 않습니다. saga 함수를 코드에서 직접 호출하지 않고 특정 action이 dispatch될 때 미들웨어가 실행합니다.  
+미들웨어는 [redux-saga](https://github.com/redux-saga/redux-saga)를 사용합니다. redux-saga는 애플리케이션이 "side-effect"를 일으킬 때 애플리케이션의 상태를 보다 쉽게 관리할 수 있도록 해주는 미들웨어입니다. 이 예제처럼 백엔드 서버의 REST-API를 호출하는 것이 대표적인 "side-effect"가 되겠습니다. redux-thunk와는 다르게 "declarative"하게 처리합니다. redux-thunk에서는 thunk라는 함수를 작성하여 action 생성 함수에 넣어주고 다시 dispatch하는 방식이지만 redux-saga는 saga라고 부르는 generator 함수를 작성하며 action은 변경되지 않습니다. saga 함수를 코드에서 직접 호출하지 않고 특정 action이 dispatch될 때 미들웨어가 실행합니다.  
 
 * axios  
 [axios](https://github.com/axios/axios)는 프라미스 기반의 HTTP 클라이언트 라이브러리입니다. 게시판 CRUD를 위한 HTTP 메소드를 쉽게 실행할 수 있도록 합니다.
