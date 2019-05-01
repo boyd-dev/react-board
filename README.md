@@ -11,13 +11,13 @@ create-react-app으로 생성된 프로젝트로 만들어졌습니다. 게시�
 * react-redux  
 redux, react-redux를 사용하여 애플리케이션 state를 관리합니다. 경우에 따라서는 해당 컴포넌트에서만 사용되는 state를 만들기도 합니다. 
 
-* redux-saga 
+* redux-saga  
 백엔드의 REST-API와 통신하기 위해 미들웨어 [redux-saga](https://github.com/redux-saga/redux-saga)를 사용합니다. redux-saga는 애플리케이션이 "side-effect"를 일으킬 때 애플리케이션의 상태를 보다 쉽게 관리할 수 있도록 해주는 미들웨어입니다. 이 예제처럼 백엔드 서버의 REST-API를 호출하는 것이 대표적인 "side-effect"가 되겠습니다. redux-thunk와는 다르게 "declarative"하게 처리합니다. redux-thunk에서는 thunk라는 함수를 작성하여 action 생성 함수에 넣어주고 다시 dispatch하는 방식이지만 redux-saga는 saga라고 부르는 generator 함수를 작성하며 action은 변경되지 않습니다. saga 함수를 코드에서 직접적으로 호출하지 않고 특정 action이 dispatch될 때 미들웨어가 실행합니다.  
 
-* axios 
+* axios  
 [axios](https://github.com/axios/axios)는 프라미스 기반의 HTTP 클라이언트 라이브러리입니다. 게시판 CRUD를 위한 HTTP 메소드를 쉽게 실행할 수 있도록 합니다.
 
-* uport-connect   
+* uport-connect    
 [uport](https://www.uport.me/)는 컨센시스에서 개발한 이더리움 기반의 탈중앙화 신원증명 프레임워크입니다. 게시판을 사용하기 위해서 로그인을 할 때 uport 모바일 앱을 사용하여 본인의 이름을 애플리케이션에게 제공합니다.  uport 모바일 앱에서 자기주권ID(self-sovereign identifier)인 분산ID(Decentralized ID, DID)를 생성한 후 애플리케이션이 사용자의 정보를 요청합니다. 
 
 사용자는 요청 수락을 통해 애플리케이션에 로그인할 수 있습니다. 사용자의 "존재"는 이더리움에 "앵커(anchor)"되어 있으므로 전세계 어디에서도(이더리움이 연결되는 어느 곳이든) 자신의 "존재"를 제출할 수 있습니다.
@@ -28,7 +28,7 @@ redux, react-redux를 사용하여 애플리케이션 state를 관리합니다. 
 
 기본적으로 koa 웹 프레임워크를 사용합니다. 
 
- * Sequelize 
+ * Sequelize  
 [Sequelize](http://docs.sequelizejs.com/)는 자바스크립트 ORM 라이브러리 입니다. SQL을 사용하지 않고 모델을 사용하여 CRUD를 처리합니다.
 따라서 MySQL에서 미리 테이블을 생성하지 않습니다. 백엔드 애플리케이션이 구동될 때 정의된 모델을 사용하여 테이블을 생성합니다. 이 예제에서는 Board라는 모델이 게시판 테이블 역할을 합니다. 개발모드에서는 재시작할 때마다 테이블을 drop 후 다시 생성합니다(당연히 데이터가 삭제됩니다). app.js 에서 force 옵션을 false로 변경하여 데이터를 유지할 수 있습니다.  
 
@@ -36,7 +36,7 @@ redux, react-redux를 사용하여 애플리케이션 state를 관리합니다. 
 models.sequelize.sync({force: false});
 ```
 
- * MySQL 
+ * MySQL  
 백엔드에서 MySQL과 연계하기 위해서 mysql2 패키지를 설치합니다.
 
 ### 예제 실행
