@@ -62,7 +62,7 @@ npm run start:dev
 
 1)  모바일 기기에 uport를 설치합니다. 
 
-2) 프론트 애플리케이션에서 [Login wirh uPort]를 클릭합니다(QR코드가 표시될 때까지 약간 지연이 발생할 수 있습니다).
+2) 프론트 애플리케이션에서 [Login wi uPort]를 클릭합니다(QR코드가 표시될 때까지 약간 지연이 발생할 수 있습니다).
 
 <img src="https://github.com/boyd-dev/react-board/blob/master/qr-code_300.png"/>
 
