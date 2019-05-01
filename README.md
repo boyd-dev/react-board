@@ -70,11 +70,11 @@ npm run start:dev
 
 <img src="https://github.com/boyd-dev/react-board/blob/master/uport01-1.PNG"/>
 
-4) 잠시 후 다음과 같은 화면이 표시됩니다. [Login with Existing]을 누릅니다.
+4) 잠시 후 다음과 같은 화면이 표시됩니다. `Login with Existing`을 누릅니다.
 
 <img src="https://github.com/boyd-dev/react-board/blob/master/uport02-1.PNG"/>
 
-5) 사용자 정보가 표시됩니다. 이 정보를 애플리케이션에 제공하여 로그인하려면 [Share to Login]을 누릅니다.
+5) 사용자 정보가 표시됩니다. 이 정보를 애플리케이션에 제공하여 로그인하려면 `Share to Login`을 누릅니다.
 
 <img src="https://github.com/boyd-dev/react-board/blob/master/uport03-1.PNG"/>
 
@@ -82,12 +82,12 @@ npm run start:dev
 
 7) react-Board를 클릭하고 게시판을 사용합니다.
 
-8) 프론트 애플리케이션에서 로그아웃하려면 메인 화면에서 [Logout from uPort]를 클릭하십시오.
+8) 프론트 애플리케이션에서 로그아웃하려면 메인 화면에서 `Logout from uPort`를 클릭하십시오.
 
 
 
 ### ⚠️ Warning!
 
-디폴트로 이더리움 <b>Rinkeby 테스트넷</b>에 존재증명을 기록하므로 실제 이더를 송금하지 마십시오!
+디폴트로 이더리움 <b>Rinkeby 테스트넷</b>에 이더리움 계정을 생성하므로 여기에 실제 이더를 송금하지 마십시오!
 
 
