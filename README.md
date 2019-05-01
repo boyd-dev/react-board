@@ -65,9 +65,15 @@ npm run start:dev
 
 3) 모바일 uport 앱을 사용하여 QR 코드를 스캔합니다.  앱에서 QR 코드 스캔 버튼을 누르십시오.
 
+<img src="https://github.com/boyd-dev/react-board/blob/master/uport01-1.PNG"/>
+
 4) 잠시 후 다음과 같은 화면이 표시됩니다. [Login with Existing]을 누릅니다.
 
+<img src="https://github.com/boyd-dev/react-board/blob/master/uport02-1.PNG"/>
+
 5) 사용자 정보가 표시됩니다. 이 정보를 애플리케이션에 제공하여 로그인하려면 [Share to Login]을 누릅니다.
+
+<img src="https://github.com/boyd-dev/react-board/blob/master/uport03-1.PNG"/>
 
 6) 잠시 후 사용자가 제공한 정보(이름)이 프론트 애플리케이션에 표시됩니다(다소 지연이 발생할 수 있습니다).
 
