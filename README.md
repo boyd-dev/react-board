@@ -36,7 +36,8 @@ models.sequelize.sync({force: false});
 ```
 
  * MySQL  
-백엔드에서 MySQL과 연계하기 위해서 mysql2 패키지를 설치합니다.
+백엔드의 Sequelize가 MySQL과 연결하기 위해서는 mysql2 패키지가 필요합니다.
+
 
 ### 예제 실행
 
@@ -49,6 +50,8 @@ npm run start
 ```
 
 2) 백엔드
+
+MySQL 연결정보는 config/config.json 에서 설정하십시오.
 
 ```
 npm run start:dev
@@ -80,6 +83,7 @@ npm run start:dev
 7) react-Board를 클릭하고 게시판을 사용합니다.
 
 8) 프론트 애플리케이션에서 로그아웃하려면 메인 화면에서 [Logout from uPort]를 클릭하십시오.
+
 
 
 ### ⚠️ Warning!
