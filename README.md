@@ -18,7 +18,7 @@ redux, react-redux를 사용하여 애플리케이션 state를 관리합니다. 
 [axios](https://github.com/axios/axios)는 프라미스 기반의 HTTP 클라이언트 라이브러리입니다. 게시판 CRUD를 위한 HTTP 메소드를 쉽게 실행할 수 있도록 합니다.
 
 * uport-connect    
-[uport](https://www.uport.me/)는 컨센시스에서 개발한 이더리움 기반의 탈중앙화 신원증명 프레임워크입니다. 게시판을 사용하기 위해서 로그인을 할 때 uport 모바일 앱을 사용하여 본인의 이름을 애플리케이션에게 제공합니다.  uport 모바일 앱에서 자기주권ID(self-sovereign identifier)인 분산ID(Decentralized ID, DID)를 생성한 후 애플리케이션이 사용자의 정보를 요청합니다. 
+[uport](https://www.uport.me/)는 컨센시스에서 개발한 이더리움 기반의 탈중앙화 신원증명 프레임워크입니다. 게시판을 사용하기 위해서 로그인을 할 때 uport 모바일 앱을 사용하여 본인의 이름을 애플리케이션에게 제공합니다.  uport 모바일 앱에서 자기주권ID(self-sovereign identifier)인 분산ID(Decentralized ID, DID)를 생성한 후 애플리케이션에서는 이 정보를 요청합니다. 
 사용자는 요청 수락을 통해 애플리케이션에 로그인할 수 있습니다. 사용자의 "존재"는 이더리움에 "앵커(anchor)"되어 있으므로 전세계 어디에서도(이더리움이 연결되는 어느 곳이든) 자신의 "존재"를 제출할 수 있습니다.
 
 <b>이 예제에서는 로그인하지 않아도 dummy user로 게시판을 사용할 수 있도록 되어 있습니다.</b>
