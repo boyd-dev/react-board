@@ -51,7 +51,7 @@ npm run start
 
 2) 백엔드
 
-MySQL 연결정보는 config/config.json 에서 설정하십시오.
+MySQL 연결정보는 config/config.json 에서 설정하십시오. 아래 명령어로 백엔드 개발서버를 실행합니다.
 
 ```
 npm run start:dev
