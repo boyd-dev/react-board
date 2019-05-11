@@ -144,7 +144,7 @@ class List extends Component {
 
         if (this.props.pending) {
             return (
-                <div style={{textAlign: 'center', marginTop: '200px'}}>
+                <div className="spinner">
                     <Loader type="Oval" color="#CE62D4" height="80" width="80"/>
                 </div>
             )

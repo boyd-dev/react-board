@@ -31,3 +31,33 @@
   cursor: pointer;
 }
 
+.spinner {
+  position: fixed;
+  top: 131px;
+  left: 511px;
+}
+
+.modal-wrapper {
+  position: fixed;
+  top: 131px;
+  left: 431px;
+  z-index: 10;
+  background-color: #0f74a8;
+  padding: 35px 35px 35px 35px;
+  color: white;
+}
+
+.btn-confirm {
+  color: black;
+}
+
+.background-dummy {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  height: 440px;
+  width: 1034px;
+  opacity: 0.5;
+  background-color: grey;
+  z-index: 5;
+}
