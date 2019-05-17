@@ -132,11 +132,10 @@ function* modifyPostSaga() {
 }
 
 
-export {
+export default [
     getListSaga,
     savePostSaga,
     getReadSaga,
     deletePostSaga,
     modifyPostSaga
-
-};
+];

@@ -1,9 +1,10 @@
-import { all } from 'redux-saga/effects'
-import { getListSaga, savePostSaga, getReadSaga, deletePostSaga, modifyPostSaga, loginSaga, logoutSaga, getDisclosedData } from './saga'
+import { all, fork } from 'redux-saga/effects'
+import { BoardSaga, LoginSaga } from './saga'
 
 //all([effects])
-//TODO 배열로 변경할 것
+//all 은 여러 effects 를 병렬적으로 실행하도록 결합한다.
+
 export default function* root() {
-    const sagas = [ getListSaga(), savePostSaga(), getReadSaga(), deletePostSaga(), modifyPostSaga(), loginSaga(), logoutSaga(), getDisclosedData()];
+    const sagas = [ ...BoardSaga.map(saga => saga()), ...LoginSaga.map(saga=> saga()) ];
     yield all(sagas);
 }

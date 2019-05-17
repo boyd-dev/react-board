@@ -1,15 +1,8 @@
-import {getListSaga, savePostSaga, getReadSaga, deletePostSaga, modifyPostSaga} from './BoardSaga';
-import {loginSaga, logoutSaga, getDisclosedData} from './LoginSaga';
+import BoardSaga from './BoardSaga';
+import LoginSaga from './LoginSaga';
 
 
 export {
-        getListSaga,
-        savePostSaga,
-        getReadSaga,
-        deletePostSaga,
-        modifyPostSaga,
-        loginSaga,
-        logoutSaga,
-        getDisclosedData
+    BoardSaga,
+    LoginSaga
 }
-

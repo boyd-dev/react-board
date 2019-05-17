@@ -46,4 +46,8 @@ function* logoutSaga() {
 }
 
 
-export { loginSaga,  logoutSaga, getDisclosedData };
+export default [
+    loginSaga,
+    logoutSaga,
+    getDisclosedData
+];
