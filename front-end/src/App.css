@@ -49,7 +49,7 @@
   animation: fadein 0.5s;
 }
 
-/* 투명에서 불투명으로 */
+
 @keyframes fadein {
   from {opacity: 0}
   to {opacity: 1}
