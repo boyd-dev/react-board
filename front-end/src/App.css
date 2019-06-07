@@ -45,7 +45,16 @@
   background-color: #0f74a8;
   padding: 35px 35px 35px 35px;
   color: white;
+  font-size: medium;
+  animation: fadein 0.5s;
 }
+
+/* 투명에서 불투명으로 */
+@keyframes fadein {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
 
 .btn-confirm {
   color: black;
