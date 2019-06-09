@@ -6,6 +6,7 @@ const bodyParser = require('koa-bodyparser');
 const api = require('./api');
 
 const env = process.env.NODE_ENV || 'development';
+const port = process.env.PORT || 4000;
 
 const models = require('./models');
 
@@ -44,6 +45,6 @@ app.use(bodyParser());
 app.use(router.routes()).use(router.allowedMethods());
 
 
-app.listen(4000, ()=>{
-    console.log('listening tp port 4000');
+app.listen(port, ()=>{
+    console.log(`listening to port ${port}`);
 });
