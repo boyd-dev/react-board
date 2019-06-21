@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import { Link } from 'react-router-dom';
 import {uportLogin, uportLogout} from '../actions';
+import Loader from 'react-loader-spinner';
 
 import '../App.css';
 
@@ -18,11 +19,12 @@ class Main extends Component {
                 <ul>
                     {
                         (!this.props.loggedIn)
-                        ? <LoginButton onUportLogin={this.props.onUportLogin}/>
+                        ? <LoginButton onUportLogin={this.props.onUportLogin} />
                         : <LogoutButton onUportLogout={this.props.onUportLogout} userInfo={this.props.userInfo}/>
                     }
                     <li><Link to="/list">[react-Board]</Link></li>
                 </ul>
+                {this.props.pending?<b> Loading... Please wait! <Loader type="Grid" color="#CE62D4" height="20" width="20"/></b>:null}
             </div>
         );
     }
@@ -30,7 +32,9 @@ class Main extends Component {
 
 const LoginButton = ({onUportLogin}) => {
     return(
-        <li><a href="#" onClick={onUportLogin}>[Login with uPort]</a></li>
+        <li>
+            <a href="#" onClick={onUportLogin}>[Login with uPort]</a>
+        </li>
     )
 }
 
@@ -43,7 +47,8 @@ const LogoutButton = ({onUportLogout, userInfo}) => {
 const mapStateToProps = (state) => {
     return {
         loggedIn: state.loggedIn,
-        userInfo: state.userInfo
+        userInfo: state.userInfo,
+        pending: state.pending
     }
 }
 
@@ -62,4 +67,3 @@ const mapDispatchToProps = (dispatch) => {
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Main);
-

@@ -90,6 +90,7 @@ function post(state, action) {
 
             return {
                 ...state,
+                pending: false,
                 loggedIn: true,
                 userInfo: {...state.userInfo, name: action.credentials.name, did: action.credentials.did}
             };
@@ -110,6 +111,12 @@ function post(state, action) {
                 pending: false,
                 error: true
             };
+
+        case '@uport/REQUEST_DISCLOSURE':
+            return {
+              ...state,
+              pending: true
+            }
 
 
         default:

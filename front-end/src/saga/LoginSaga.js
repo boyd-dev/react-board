@@ -5,7 +5,7 @@ import { uport } from '../utils/connectors'
 
 function* requestCredentials() {
 
-    const requestingUserInfo = { requested: ['name'], notifications: true, accountType: 'general' };
+    const requestingUserInfo = { requested: ['name', 'email'], notifications: true, accountType: 'general' };
 
     //사용자 신원정보를 요청을 시작한다.
     yield call([uport, 'requestDisclosure'], requestingUserInfo);
